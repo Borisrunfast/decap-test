@@ -1,5 +1,5 @@
 backend:
-  name: test-repo
+  name: decap-test
 
 site_url: https://example.com
 
