@@ -1,5 +1,6 @@
 backend:
   name: git-gateway
+  repo: Borisrunfast/decap-test
   branch: main # Branch to update (optional; defaults to master)
 
 site_url: https://example.com
