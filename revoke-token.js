@@ -26,4 +26,4 @@ function revokeAccess(accessToken) {
     form.submit();
   }
 
-  revokeAccess(userToken)
+  console.log(revokeAccess(userToken))
