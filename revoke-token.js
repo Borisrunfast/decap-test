@@ -1,6 +1,10 @@
 const fragmentStr = window.location.search
 
+console.log(fragmentStr)
+
 const urlParams = new URLSearchParams(fragmentStr)
+
+console.log(urlParams)
 
 const userToken = urlParams.get('access_token')
 
