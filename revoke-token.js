@@ -4,14 +4,19 @@ const userToken = urlParams.get('access_token')
 
 
 async function getUserData(accessToken) {
-    const response = await fetch('https://www.googleapis.com/oauth2/v3/userinfo', {
-        headers: {
-            'Authorization': `Bearer ${accessToken}`
-        }
-    })
-    const data = await response.json()
-    return data
+    try {
+        const response = await fetch('https://www.googleapis.com/oauth2/v3/userinfo', {
+            headers: {
+                'Authorization': `Bearer ${accessToken}`
+            }
+        })
+        const data = await response.json()
+        return data
+    } catch (err) {
+        console.log(err)
+    }
   }
 
-  console.log(getUserData(userToken))
+  const data = getUserData(userToken)
+  console.log(data)
 
