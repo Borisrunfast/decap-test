@@ -1,16 +1,9 @@
 const fragmentStr = window.location.hash
-
-console.log(fragmentStr)
-
 const urlParams = new URLSearchParams(fragmentStr)
-
-console.log(urlParams)
-
 const userToken = urlParams.get('access_token')
 
-console.log(userToken)
 
-/*function revokeAccess(accessToken) {
+function revokeAccess(accessToken) {
     // Google's OAuth 2.0 endpoint for revoking access tokens.
     let revokeTokenEndpoint = 'https://oauth2.googleapis.com/revoke';
   
@@ -31,4 +24,6 @@ console.log(userToken)
     // Add form to page and submit it to actually revoke the token.
     document.body.appendChild(form);
     form.submit();
-  }*/
+  }
+
+  revokeAccess(userToken)
