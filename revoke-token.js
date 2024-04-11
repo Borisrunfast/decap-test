@@ -1,4 +1,4 @@
-const fragmentStr = window.location
+const fragmentStr = window.location.hash
 
 console.log(fragmentStr)
 
