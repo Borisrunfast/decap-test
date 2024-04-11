@@ -9,7 +9,7 @@ function oauthSignIn() {
   
     // Parameters to pass to OAuth 2.0 endpoint.
     let params = {'client_id': '806576395751-btlulq8ti5otes0uiikpefgqqm4cnfok.apps.googleusercontent.com',
-                  'redirect_uri': 'https://boris-decap-test.netlify.app/admin',
+                  'redirect_uri': 'https://boris-decap-test.netlify.app/admin/cms.html',
                   'response_type': 'token',
                   'scope': 'https://www.googleapis.com/auth/drive.metadata.readonly',
                   'include_granted_scopes': 'true',
