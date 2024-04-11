@@ -1,4 +1,4 @@
-const fragmentStr = window.location.search
+const fragmentStr = window.location
 
 console.log(fragmentStr)
 
